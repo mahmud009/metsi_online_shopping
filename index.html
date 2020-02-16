@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>METSI | Online Shpping</title>
+    <title>METSI - Online Shopping</title>
 
     <!--External css librery CDNs start-->
     <link
@@ -38,11 +38,16 @@
     <!--External css librery CDNs end-->
 
     <!--local css librery CDNs start-->
+    <link rel="icon" href="assets/icons/metsi-fav.png" />
     <link rel="stylesheet" href="style.css" />
     <!--local css librery CDNs end-->
   </head>
   <body>
     <!--Site content starts here-->
+
+    <button class="scroll-top" onclick="window.location.href = '#fashion';">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
     <header>
       <div class="site-container">
@@ -52,28 +57,36 @@
           >
         </div>
 
-        <nav>
-          <ul>
-            <li><a href="#fashion">fashion</a></li>
-            <li><a href="#lifestyle">lifestyle</a></li>
-            <li><a href="#wearable">wearable</a></li>
-            <li><a href="#music">MUSIC</a></li>
-            <li><a href="#beauty">Beauty</a></li>
-            <li><a href="#footwear">footwear</a></li>
-          </ul>
-        </nav>
-        <div class="social-icons">
-          <ul>
-            <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-behance"></i></a>
-            </li>
-          </ul>
+        <div class="nav-wrapper">
+          <nav>
+            <ul>
+              <li><a href="#fashion">fashion</a></li>
+              <li><a href="#lifestyle">lifestyle</a></li>
+              <li><a href="#wearable">wearable</a></li>
+              <li><a href="#music">MUSIC</a></li>
+              <li><a href="#beauty">Beauty</a></li>
+              <li><a href="#footwear">footwear</a></li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-behance"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>
@@ -88,7 +101,7 @@
         <div class="site-container">
           <div class="content-wrapper" data-parallax="scroll">
             <h3>Fashion and creative wears.</h3>
-            <h1>Fashion is perfect</h1>
+            <h1>Perfet Fashionist</h1>
             <button>
               <i class="fas fa-tags"></i>Get Discount on your shopping
             </button>
@@ -179,7 +192,9 @@
 
     <footer>
       <div class="logo">
-        <h1><i class="far fa-lightbulb"></i>METSI</h1>
+        <a href="index.html"
+          ><h1><i class="far fa-lightbulb"></i>METSI</h1></a
+        >
       </div>
 
       <div class="social-icons">
