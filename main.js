@@ -2,7 +2,7 @@ $(function() {
   //Nav bar scroll behaviour
 
   $(window).scroll(() => {
-    if ($(window).scrollTop() > 700) {
+    if ($(window).scrollTop() > 650) {
       $("header").addClass("header-scrolled");
     } else {
       $("header").removeClass("header-scrolled");
