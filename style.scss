@@ -295,6 +295,10 @@ nav {
   @include tablet {
     margin-left: 60px;
   }
+
+  @include mobile {
+    margin-left: 35px;
+  }
   ul {
     list-style-type: none;
     display: flex;
@@ -351,6 +355,10 @@ nav {
     justify-content: flex-start;
     margin-left: 60px;
   }
+
+  @include mobile {
+    margin-left: 35px;
+  }
   ul {
     display: flex;
     justify-content: start;
@@ -371,6 +379,7 @@ nav {
         margin-left: 15px;
         margin-top: 80px;
       }
+
       a {
         font-size: 14px;
         transition: all 0.5s ease;
