@@ -392,12 +392,19 @@ main {
 }
 
 section {
-  width: 100%;
-  height: 100vh;
+  width: 100% !important;
+  height: 100vh !important;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+
+  @include tablet {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 section .site-container {
@@ -433,6 +440,13 @@ section .site-container {
     font-size: 20px;
     margin-left: 10px;
     letter-spacing: 3px;
+
+    @include mobile {
+      text-align: center;
+      font-size: 16px;
+      line-height: 16px;
+      color: #3a0077;
+    }
   }
   h1 {
     font-weight: 800;
@@ -449,7 +463,8 @@ section .site-container {
 
     @include mobile {
       text-align: center;
-      font-size: 80px;
+      font-size: 45px;
+      line-height: 50px;
     }
   }
 

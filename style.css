@@ -510,12 +510,21 @@ main {
 }
 
 section {
-  width: 100%;
-  height: 100vh;
+  width: 100% !important;
+  height: 100vh !important;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+}
+
+@media (max-width: 960px) {
+  section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 section .site-container {
@@ -575,6 +584,15 @@ section .site-container {
   letter-spacing: 3px;
 }
 
+@media (max-width: 720px) {
+  .content-wrapper h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3a0077;
+  }
+}
+
 .content-wrapper h1 {
   font-weight: 800;
   font-size: 140px;
@@ -594,7 +612,8 @@ section .site-container {
 @media (max-width: 720px) {
   .content-wrapper h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 
