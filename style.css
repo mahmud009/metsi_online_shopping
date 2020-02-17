@@ -148,6 +148,12 @@ header .site-container {
   }
 }
 
+@media (max-width: 720px) {
+  header .site-container {
+    padding: 0 30px 0 30px;
+  }
+}
+
 .logo {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -637,6 +643,20 @@ section .site-container {
   margin-right: 20px;
 }
 
+@media (max-width: 720px) {
+  .content-wrapper button i {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 720px) {
+  .content-wrapper button {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
 .content-wrapper button:hover {
   background: #220265;
 }
@@ -751,8 +771,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 60px;
-  padding-bottom: 10px;
+  padding: 40px;
 }
 
 footer .logo {
@@ -765,29 +784,67 @@ footer .logo h1 {
   cursor: pointer;
 }
 
-footer .social-icons {
-  margin-top: 30px;
+footer .footer-social-icons {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer .social-icons ul {
+footer .footer-social-icons ul {
   border-left: none;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
 }
 
-footer .social-icons ul li {
+footer .footer-social-icons ul li {
   margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
-footer .social-icons ul li a {
+footer .footer-social-icons ul li a {
   font-size: 16px;
 }
 
-footer .social-icons ul li:first-child {
+footer .footer-social-icons ul li:first-child {
   margin-left: 0;
 }
 
 footer p {
-  margin-top: 50px;
-  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  footer p {
+    text-align: center;
+    font-size: 12px;
+  }
 }
 
 footer p a {

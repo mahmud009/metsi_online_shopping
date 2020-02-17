@@ -137,6 +137,10 @@ header .site-container {
   @include tablet {
     justify-content: space-between;
   }
+
+  @include mobile {
+    padding: 0 30px 0 30px;
+  }
 }
 
 .logo {
@@ -481,6 +485,16 @@ section .site-container {
     transition: all 0.5s ease;
     i {
       margin-right: 20px;
+
+      @include mobile {
+        margin-right: 5px;
+      }
+    }
+
+    @include mobile {
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
     }
   }
 
@@ -581,9 +595,7 @@ footer {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-
-  padding: 60px;
-  padding-bottom: 10px;
+  padding: 40px;
 
   .logo {
     flex-basis: 0;
@@ -593,12 +605,27 @@ footer {
     }
   }
 
-  .social-icons {
-    margin-top: 30px;
+  .footer-social-icons {
+    margin-top: 20px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     ul {
       border-left: none;
+      list-style-type: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 0;
+      text-align: center;
       li {
         margin-left: 20px;
+        display: inline-block;
+        margin-bottom: 0;
         a {
           font-size: 16px;
         }
@@ -609,8 +636,13 @@ footer {
     }
   }
   p {
-    margin-top: 50px;
-    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    @include mobile {
+      text-align: center;
+      font-size: 12px;
+    }
     a {
       color: $accent-color;
     }
